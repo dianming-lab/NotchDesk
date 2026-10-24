@@ -1,0 +1,8 @@
+{
+  "version": "0.1.5",
+  "architecture": "arm64",
+  "minimum_macos": "13.0",
+  "notarized": false,
+  "sha256": "bb9dbebc989ad5d5b9109aa24d1e3e1acc95165c0b27dadc1cd952705a0ab946",
+  "download": "downloads/NotchDesk-0.1.5-arm64.zip"
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NotchDesk · 把桌面，收进刘海里</title>
+<meta name="description" content="NotchDesk 是一款 macOS 原生桌面文件工具。鼠标靠近刘海，即刻取用桌面文件；拖入即可保存到桌面。下载 Apple Silicon 试用版。">
+<meta name="theme-color" content="#0b1018"><link rel="icon" href="assets/notchdesk-icon.png">
+<link rel="canonical" href="https://dianming.site/notchdesk/">
+<meta property="og:title" content="NotchDesk · 把桌面，收进刘海里"><meta property="og:description" content="靠近即展开，拖放就到位。一个安静待在刘海下的桌面文件工具。"><meta property="og:image" content="https://dianming.site/notchdesk/assets/notchdesk-icon.png">
+<link rel="stylesheet" href="style.css"><script src="demo.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="nav wrap"><a class="brand" href="./"><img src="assets/notchdesk-icon.png" alt="" width="36" height="36">NotchDesk</a><nav aria-label="主导航"><a href="/#lab">点铭的作品 ↗</a><a href="#demo">体验演示</a><a class="nav-download" href="#download">下载试用版 <span aria-hidden="true">↓</span></a></nav></header>
+<main id="main">
+<section class="hero wrap">
+<div class="eyebrow"><span class="status-dot"></span> A LITTLE SPACE. A BETTER FLOW.</div>
+<img class="hero-icon" src="assets/notchdesk-icon.png" width="100" height="100" alt="NotchDesk 图标：刘海下方的玻璃文件托盘">
+<h1>把桌面，<br class="mobile-break">收进刘海里。</h1>
+<p class="lead">正在忙的事，不必切走。<br>鼠标轻轻一靠，桌面文件就在手边。</p>
+<div class="actions"><a class="button primary" href="#download"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>下载 Mac 试用版</a><a class="button secondary" href="https://github.com/dianming-lab/NotchDesk" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor;stroke:none"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a></div>
+<p class="compat">v0.1.5 · Apple Silicon · macOS 13+ <span class="beta">试用版</span></p>
+<p class="launch-note">尚未经过 Apple 公证，首次打开请阅读<a href="#install">安装说明</a>。</p>
+</section>
+<section id="demo" class="demo-section wrap" aria-labelledby="demo-title">
+<div class="demo-caption"><h2 id="demo-title">给工作留一点顺手的空间。</h2><span>交互示意 · 非实际录屏</span></div>
+<div class="screen" id="screen">
+<div class="wallpaper"></div><div class="menubar"><span>Finder &nbsp; 文件 &nbsp; 编辑</span><span>周六 09:41</span></div>
+<button class="notch" id="notch" aria-label="展开桌面文件演示" aria-expanded="false" aria-controls="shelf"><span></span></button>
+<div class="desktop-file"><div class="folder-shape"></div><span>项目资料</span></div>
+<div class="work-window"><div class="window-bar"><i></i><i></i><i></i><span>正在处理的工作</span></div><div class="work-body"><span class="work-kicker">JUST KEEP GOING</span><h3>思路不用中断。</h3><p>附件、图片、文档。<br>用到桌面文件时，向上一点就好。</p><div class="attachment" id="attachment">把文件交给当前应用</div></div></div>
+<div class="shelf" id="shelf" hidden><div class="shelf-header"><span class="desktop-symbol">▣</span><div><strong>桌面</strong><small id="item-count">3 个项目 · 与桌面同步</small></div><span class="sync-dot" aria-label="已同步"></span></div><div class="shelf-files" id="files"><div class="file"><span class="file-icon pdf">PDF</span><div><strong>项目提案.pdf</strong><small>2.4 MB</small></div><span class="file-arrow">↗</span></div><div class="file"><span class="file-icon pic">▧</span><div><strong>灵感截图.png</strong><small>860 KB</small></div><span class="file-arrow">↗</span></div><div class="file"><span class="file-icon doc">W</span><div><strong>会议记录.docx</strong><small>32 KB</small></div><span class="file-arrow">↗</span></div></div><div class="shelf-bottom"><span id="shelf-status">拖入存到桌面 · 拖出到其他应用</span><span>打开 ↗</span></div></div>
+<div class="demo-hint" id="demo-hint">点击顶部刘海，展开桌面文件</div>
+</div>
+<div class="demo-controls" role="group" aria-label="选择演示场景"><button class="selected" data-scene="reveal" aria-pressed="true"><span>01</span>靠近展开</button><button data-scene="out" aria-pressed="false"><span>02</span>拖出使用</button><button data-scene="in" aria-pressed="false"><span>03</span>拖入保存</button></div>
+<p class="demo-description" id="demo-description" aria-live="polite">在应用里，靠近刘海即可展开，离开约 0.15 秒后隐藏。这里点击刘海即可体验示意。</p>
+</section>
+<section class="workflow wrap" aria-labelledby="flow-title"><div class="section-intro"><span class="overline">LESS SWITCHING. MORE DOING.</span><h2 id="flow-title">文件来回，<br>工作继续。</h2><p>不用先找桌面，再找回刚才的窗口。<br>把这段小小的来回，变成一次拖放。</p></div><div class="principles"><article><span class="step">01 / REACH</span><h3>需要时，它就在。</h3><p>靠近刘海两侧或下沿，桌面文件区立即展开。鼠标移开，它就安静收起。</p></article><article><span class="step">02 / TAKE</span><h3>拿出来，接着用。</h3><p>把文件拖到支持文件拖放的邮件、聊天或其他应用中，也可以双击直接打开。</p></article><article><span class="step">03 / DROP</span><h3>放进去，就是桌面。</h3><p>把文件拖进面板，即可复制到桌面。遇到同名文件自动编号，保留已有文件。</p></article></div></section>
+<section class="details-band"><div class="wrap details-grid"><div><span class="detail-symbol">◌</span><h3>原生毛玻璃</h3><p>跟随系统的浅色与深色模式，融入你的 Mac。</p></div><div><span class="detail-symbol">⇄</span><h3>和桌面保持一致</h3><p>直接展示桌面文件夹，文件增减会自动更新。</p></div><div><span class="detail-symbol">⌁</span><h3>文件留在本机</h3><p>无需注册。应用不上传文件；iCloud 桌面同步由系统管理。</p></div></div></section>
+<section class="download wrap" id="download"><div class="download-intro"><img src="assets/notchdesk-icon.png" alt="" width="88" height="88"><span class="overline">MADE FOR YOUR EVERYDAY MAC</span><h2>让桌面，<br>离你近一点。</h2><p>NotchDesk v0.1.5 · 2026.10.24</p><a class="button primary" href="downloads/NotchDesk-0.1.5-arm64.zip" download>下载 Apple Silicon 版 <span aria-hidden="true">↓</span></a><small>M 系列 Mac · macOS 13 或更新版本<br>当前不支持 Intel Mac，无需安装开发工具。</small></div><div class="install" id="install"><h3>第一次见面，只需几步。</h3><ol><li><strong>解压，放进「应用程序」</strong><p>在本机「下载」文件夹解压 ZIP，再把 NotchDesk.app 拖入「应用程序」。</p></li><li><strong>打开应用，确认来源</strong><p>当前试用版尚未经过 Apple 公证。若提示无法验证开发者，确认文件来自本网站后，到「系统设置 → 隐私与安全性」选择「仍要打开」。<a href="https://support.apple.com/zh-cn/102445" target="_blank" rel="noopener noreferrer">查看 Apple 说明 ↗</a></p></li><li><strong>允许访问桌面</strong><p>出现提示时允许访问桌面，随后将鼠标移到刘海附近。菜单栏托盘图标可以展开面板或退出。</p></li></ol></div></section>
+<section class="faq wrap"><h2>你可能还想知道</h2><details><summary>没有刘海的 Mac，也能用吗？</summary><p>可以。没有刘海时，感应区位于主屏幕顶部中央；当前下载包仍要求 Apple 芯片和 macOS 13 或更新版本。</p></details><details><summary>拖入是移动文件，还是复制文件？</summary><p>拖入采用复制方式，来源文件会保留。同名文件会添加编号，避免覆盖桌面上已有的文件。拖出也使用复制语义，接收方式由目标应用决定。</p></details><details><summary>为什么有些应用里的内容拖不进来？</summary><p>来源应用需要提供文件或支持延迟生成文件的拖放协议。纯文字、网页链接不会自动转换成文件。</p></details><details><summary>现在可以查看源代码吗？</summary><p>可以。NotchDesk 采用 MIT 许可证开源，你可以在 <a href="https://github.com/dianming-lab/NotchDesk" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 查看源码、构建说明和更新记录，也欢迎反馈问题。</p></details><details><summary>遇到问题，如何反馈？</summary><p>请提供 macOS 版本、Mac 型号和复现步骤，发送到 <a href="mailto:915784391@qq.com?subject=NotchDesk%20反馈">915784391@qq.com</a>。请勿附上包含私人文件内容的截图。</p></details></section>
+<section class="maker wrap"><span class="overline">FROM A SMALL EVERYDAY NEED</span><p>从「取一个桌面文件，为什么要切走窗口」开始。<br>由点铭设计，通过 AI 辅助开发，持续打磨每一次靠近和拖放。</p><a href="/#lab">探索更多作品 ↗</a></section>
+</main><footer class="wrap"><span>© 2026 点铭 · NotchDesk</span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026072192号-1</a></footer>
+</body></html>
