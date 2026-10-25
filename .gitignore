@@ -1,0 +1,19 @@
+.build/
+/dist/
+.DS_Store
+# Personal portfolio integration and local release artifacts
+website/homepage-before.html
+website/checksum.txt
+website/qa/
+website/*.tar.gz
+website/*.zip
+.env
+.env.*
+*.p12
+*.p8
+*.mobileprovision
+
+website/dist/index.html
+website/dist/notchdesk/downloads/
+website/DEPLOYMENT.md
+OPEN_SOURCE_PLAN.md
